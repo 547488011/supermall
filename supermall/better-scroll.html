@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      .content{
+        height: 200px;
+        background-color: red;
+        overflow: hidden;
+      }
+  </style>
+</head>
+<body>
+  
+     <div class="content">
+        <ul>
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+          <li>列表</li>  
+        </ul>
+      </div>
+      <script src="./bscroll.js"></script>
+      <script>
+        //默认情况下BScroll是不可以实时的监听滚动位置
+        //probe 侦测
+        //0，1都是不侦测实时的位置
+        //2:在手指滚动的过程中侦测，手指离开后的惯性滚动过程中不侦测
+        //3:只要是滚动,都侦测
+            const bscroll = new BScroll(document.querySelector('.content'),{
+            // probeType:3,
+            // click:true,
+            // pullUpLoad:true
+        })
+        // bscroll.on('scroll',(position)=>{
+        //   console.log(position);
+          
+        // })
+        // bscroll.on('pullingUp',()=>{
+        //   console.log('上拉加载更多');
+        //   //发送网络请求，请求更多分页的数据
+    
+        //   //等数据请求完成,并且将数据展示出来后
+        //   setTimeout(()=>{
+        //     bscroll.finishPullUp()
+        //   },2000)
+        // })
+      </script>
+</body>
+</html>
